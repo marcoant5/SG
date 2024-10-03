@@ -1,0 +1,15 @@
+En la carpeta Codigo, se encuentra:
+	- la carpeta DragonBallKart, que es el juego en sí.
+	- la carpeta Objetos3D que es para visionar los distintos objetos modelados de uno en uno. Se podrá acceder a los diferentes modelos mediante teclas.
+	
+La carpeta Documentacion contiene:
+	- Video de 40 segundos sobre ejecuciones del juego.
+	- InformeFinalDragonballKart.pdf que es el informe con las explicaciones de los algoritmos, manual del juego y demás información requerida.
+	- DragonBallKart.pdf que es la versión inicial del proyecto.
+	- Diagrama de clases del proyecto
+	- Modelo jerárquico del objeto articulado.
+	
+Para lanzar tanto el juego como el visualizador de modelos, hay que ejecutar en una terminal situada dentro de la carpeta Codigo:
+
+python -m http.server
+

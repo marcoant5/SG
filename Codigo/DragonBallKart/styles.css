@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/imgs/fondoSerpiente.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .leaderboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semitransparent background */
+  }
+  
+  .leaderboard {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Semitransparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: #333;
+  }
+  
+  .leaderboard h1 {
+    margin: 0 0 20px;
+    font-size: 2.5em;
+    color: #444;
+  }
+  
+  .leaderboard p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #555;
+  }
+  
+  .leaderboard button {
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #b64199;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .leaderboard button:hover {
+    background: #f056c9;
+  }
+  

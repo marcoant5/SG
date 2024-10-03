@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIN DEL JUEGO</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="leaderboard-container">
+    <div class="leaderboard">
+      <h1>FIN DEL JUEGO</h1>
+      <p id="score"></p>
+      <button onclick="resetGame()">¡Volver a jugar!</button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Obtener el puntaje de localStorage
+      const score = localStorage.getItem('score');
+      
+      // Mostrar el puntaje
+      if (score !== null) {
+        document.getElementById('score').innerText = `Tu puntuación es: ${score}`;
+      }
+    });
+
+    function resetGame() {
+      localStorage.removeItem('score');
+      window.location.href = 'index.html'; // Redirige a la página principal para reiniciar el juego
+    }
+  </script>
+</body>
+</html>
